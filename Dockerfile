@@ -13,4 +13,4 @@ EXPOSE 9090
 #COPY --from=builder /code/target/HelloWorld-Java-Springboot-0.0.1.jar .
 EXPOSE 8080
 #CMD ["java","-jar","HelloWorld-Java-Springboot-0.0.1.jar"] 
-CMD ["sh" "-c" "echo Hello World"]
+#CMD ["sh" "-c" "echo Hello World"]
