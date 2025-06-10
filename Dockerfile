@@ -10,7 +10,6 @@ FROM openjdk:11-jdk
 RUN mkdir /code
 WORKDIR /code
 EXPOSE 9090
-#COPY --from=builder /code/target/HelloWorld-Java-Springboot-0.0.1.jar .
+COPY --from=builder /code/target/HelloWorld-Java-Springboot-0.0.1.jar .
 EXPOSE 8080
-#CMD ["java","-jar","HelloWorld-Java-Springboot-0.0.1.jar"] 
-#CMD ["sh" "-c" "echo Hello World"]
+CMD ["java","-jar","HelloWorld-Java-Springboot-0.0.1.jar"] 
